@@ -4,7 +4,7 @@
 Graduate Student Consortium, Lighting Talk on State-of-the-art Biomedical and Clinical NLP, and Tutorial on ChatGPT and Prompt Engineering
 
 
-This is the webiste for AMIA NLP Pre-Symposium 2022
+This is the webiste for AMIA NLP Pre-Symposium 2024
 
 ## Built With
 
@@ -21,5 +21,5 @@ This is the webiste for AMIA NLP Pre-Symposium 2022
 
 - GitHub: [@sonish](https://github.com/sonishsivarajkumar)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sonish-sivarajkumar-7b2b19163/)
-- Twitter: [@sonish](https://twitter.com/)
+- Twitter: [@sonish]([https://twitter.com/](https://x.com/sonish_sivaraj))
 
