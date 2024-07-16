@@ -32,9 +32,9 @@ const guests = {
   },
   guest2: {
     name: 'Satya Sahoo, PhD',
-    occupation: 'Chair',
+    occupation: 'Vice Chair',
     description: 'Associate Professor, Case Western Reserve University, Cleveland, OH',
-    picture: 'src/adachi.png',
+    picture: 'src/satya.png',
   },
   guest3: {
     name: 'Joseph M. Plasek, PhD',
