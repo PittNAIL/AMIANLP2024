@@ -43,10 +43,10 @@ const guests = {
     picture: 'src/joseph.png',
   },
   guest4: {
-    name: 'Dina Demner-Fushman, MD, PhD ',
-    occupation: 'Past-Chair',
-    description: 'National Library of Medicine, Bethesda, MD.',
-    picture: 'src/adachi.png',
+    name: 'Rui Zhang, PhD ',
+    occupation: 'Chair-Elect',
+    description: 'Professor and Chief, University of Minnesota, Minneapolis, MN',
+    picture: 'src/rui.png',
   // },
   // guest4: {
   //   name: 'NAME',
