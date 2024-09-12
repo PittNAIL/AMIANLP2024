@@ -32,6 +32,29 @@
         tr.gray-row {
             background-color: #c7c5c3;
         }
+
+        .program-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .program-table th, .program-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .program-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .session-header {
+            background-color: #eba134;
+            color: white;
+            font-weight: bold;
+        }
+        .break-row {
+            background-color: #e6e6e6;
+        }
     </style>
 </head>
 <body class="app-wrap">
@@ -74,17 +97,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#objectives-id">
-                        <h4>Objectives</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="#events-id">
+                    <a href="#program-id">
                         <h4>Program</h4>
                     </a>
                 </li>
                 <li>
-                    <a href="about.html#guests-id">
+                    <a href="#committee-id">
+                    <!-- <a href="about.html#guests-id"> -->
                         <h4>Organization</h4>
                     </a>
                 </li>
@@ -118,13 +137,7 @@
                     <hr>
                 </li>
                 <li>
-                    <a href="#objectives-id" id="onclick-guests">
-                        <h4>Schedule</h4>
-                    </a>
-                    <hr>
-                </li>
-                <li>
-                    <a href="#events-id" id="onclick-events">
+                    <a href="#program-id" id="onclick-events">
                         <h4>Program</h4>
                     </a>
                     <hr>
@@ -165,7 +178,7 @@
         <p>The application of Natural Language Processing (NLP) in everyday life has rapidly 
             progressed over the past decades. This progress has been enabled by the availability 
             of tools, large language models (LLMs), and resources that could be shared, reused, and 
-            fine-tuned to support users’ projects and collaborations. Today, recently evolved 
+            fine-tuned to support users' projects and collaborations. Today, recently evolved 
             generative AI is being integrated into general search and 
             workplace productivity tools. Applying NLP to the textual content of patient 
             electronic health records (i.e., clinical text) is constrained by strict patient 
@@ -189,29 +202,44 @@
             and (5) to discuss ethical issues related to the emerging NLP technologies, 
             especially as they relate to the healthcare industry (and adjunct industries).</p> 
         <br> <br>
-        
-        <br> <br>
     </section>
 
     <style>
-        .tab1 {
-            tab-size: 2;
+        .program-section {
+            background-color: #ffffff;
+            padding: 20px;
         }
-  
-        .tab2 {
-            tab-size: 4;
+        .program-section h2 {
+            color: #333333;
+            text-align: left;
+            margin-bottom: 20px;
         }
-  
-        .tab4 {
-            tab-size: 8;
+        .program-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .program-table th, .program-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .program-table th {
+            background-color: #f2f2f2;
+        }
+        .session-header {
+            background-color: #eba134;
+            color: white;
+            font-weight: bold;
+        }
+        .break-row {
+            background-color: #e6e6e6;
         }
     </style>
-
     
-    <section class="events" id="intro-id">
+    <section class="program-section" id="program-id">
         <h2>Program</h2>
         <hr>
-        <table>
+        <table class="program-table">
             <tr>
                 <th>Time</th>
                 <th>Title</th>
@@ -222,8 +250,8 @@
                 <td>Welcome to AMIA 2024 NLP Working Group Pre-symposium</td>
                 <td>Yanshan Wang, AMIA NLP WG Chair, University of Pittsburgh</td>
             </tr>
-            <tr>
-                <th colspan="3">Session 1 – NLP Applications in Clinical Decision Support and Patient Care<br>Session Chair: Satya Sahoo, AMIA NLP WG Vice Chair, Case Western University</th>
+            <tr class="session-header">    
+                <td colspan="3">Session 1 – NLP Applications in Clinical Decision Support and Patient Care<br>Session Chair: Satya Sahoo, AMIA NLP WG Vice Chair, Case Western University</td>
             </tr>
             <tr>
                 <td>8:30 – 8:45am</td>
@@ -255,12 +283,12 @@
                 <td>LLMs Cannot Beat Traditional ML Models in Clinical Prediction Yet</td>
                 <td>Canyu Chen, Illinois Institute of Technology</td>
             </tr>
-            <tr>
+            <tr class="break-row">
                 <td>10:00 – 10:30am</td>
                 <td colspan="2">Coffee Break</td>
             </tr>
-            <tr>
-                <th colspan="3">Session 2 – Ethical and Methodological Considerations in Clinical NLP<br>Session Chair: Rui Zhang, AMIA NLP WG Chair-Elect, University of Minnesota</th>
+            <tr class="session-header">
+                <td colspan="3">Session 2 – Ethical and Methodological Considerations in Clinical NLP<br>Session Chair: Rui Zhang, AMIA NLP WG Chair-Elect, University of Minnesota</td>
             </tr>
             <tr>
                 <td>10:30 – 10:45am</td>
@@ -297,11 +325,10 @@
                 <td>Toward Large Language Models as a Therapeutic Tool: Comparing Prompting Techniques to Improve GPT-Delivered Problem-Solving Therapy</td>
                 <td>Daniil Filienko, University of Washington Tacoma</td>
             </tr>
-            <tr>
-                <td colspan="3">Workshop Adjourns</td>
-            </tr>
         </table>
     </section>
+
+    <hr> <!--  divider between Program and Organization sections -->
 
     <section class="guests2" id="committee-id">
         <h2>Organization</h2>
@@ -324,7 +351,7 @@
             <li>Abeed Sarker, PhD, Emory University, Atlanta, Georgia </li><br>
             <li>Ramakanth Kavuluru, University of Kentucky, Lexington, Kentucky</li><br>
         </ul>
-    </section> 
+    </section>
 
     <section class="events1" id="submissions-id">
         <h2>Submission and Review</h2>

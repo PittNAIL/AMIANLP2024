@@ -35,18 +35,6 @@ const guests = {
     description: 'Description.',
     picture: 'src/adachi.png',
   },
-  // guest7: {
-  //   name: 'Christopher Sabat',
-  //   occupation: 'Voice actor',
-  //   description: 'One of the leading figures in the dubbing industry, worked on many hit series such as My Hero Academia as All might, and Dragonball as Vegeta.',
-  //   picture: 'src/christopher.png',
-  // },
-  // guest8: {
-  //   name: 'Ichiro Hashiba',
-  //   occupation: 'CEO of Bookwalker',
-  //   description: 'CEO of the leading publisher for translated manga and light novel series Bookwalker, one of the first japan based publishers with global coverage.',
-  //   picture: 'src/ichiro.png',
-  // },
 };
 
 function createGuest(guest) {
@@ -92,8 +80,20 @@ mediaQuery.addEventListener('change', () => {
   document.querySelector('.mobile-menu').style.display = 'none';
 });
 
+function addSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   mediaQueryCheck();
+  addSmoothScrolling();
 });
 
 button.addEventListener('click', () => {
@@ -122,10 +122,12 @@ function openCloseMenu() {
     y.style.overflow = 'hidden';
   }
 }
+
 function addevent(id) {
   document.getElementById(id).addEventListener('click', () => {
     openCloseMenu();
   });
 }
-const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors', 'onclick-compaign'];
+
+const ids = ['onclick-open', 'onclick-close', 'onclick-events', 'onclick-about', 'onclick-guests', 'onclick-sponsors', 'onclick-compaign', 'onclick-program'];
 ids.forEach(addevent);
